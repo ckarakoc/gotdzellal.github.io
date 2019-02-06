@@ -1,0 +1,10 @@
+
+<div class="stars">
+    <i class="pre-stars-icon {{ include.icon }}" id="{{ include.id }}"></i>
+    {% for i in (1..include.count) %}
+    <i class="fas fa-star star checked-star"></i>
+    {% endfor %}
+    {% for i in (include.count..4) %}
+    <i class="far fa-star star"></i>
+    {% endfor %}
+</div>

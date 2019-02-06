@@ -1,0 +1,279 @@
+html {
+    font-family: "Ubuntu Mono";
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1.3;
+    margin: 0;
+    padding: 0
+}
+
+body {
+    margin: 0;
+}
+
+ol, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* ASCII: http://www.patorjk.com/software/taag/#p=display&f=Big&t=HEADER */
+
+/*
+  _    _ ______          _____  ______ _____  
+ | |  | |  ____|   /\   |  __ \|  ____|  __ \ 
+ | |__| | |__     /  \  | |  | | |__  | |__) |
+ |  __  |  __|   / /\ \ | |  | |  __| |  _  / 
+ | |  | | |____ / ____ \| |__| | |____| | \ \ 
+ |_|  |_|______/_/    \_\_____/|______|_|  \_\
+
+*/
+
+/* #region */
+
+/* Nav Bar: */
+
+header {
+    position: relative;
+    display: flex;
+    box-align: center;
+    -ms-flex-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+header nav {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+}
+
+nav {
+    position: relative;
+    /* background-color: orange; */
+    background-image: linear-gradient(#2a2a2a, #2a2a2a);
+    z-index: 100;
+}
+
+nav ol, nav ul {
+    list-style: none;
+    list-style-image: none;
+}
+
+.nav-sections {
+    display: flex;
+    flex-grow: 3;
+    -ms-flex-align: center;
+}
+
+.nav-item {
+    height: 50%;
+    flex: 1;
+    border: 1px solid red;
+    border-left: 1px solid #272727;
+    text-align: center;
+    -webkit-text-fill-color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    /* background-color: black; */
+}
+
+.nav-content {
+    display: flex;
+}
+
+.nav-item:hover {
+    /* background-color: turquoise; */
+}
+
+.nav-link {
+    text-decoration: none;
+    padding: .5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+/* Profile Pic: */
+
+.profile {
+    background-color: #eb2a2a;
+    padding: 1em;
+    border: 1px solid red;
+}
+
+.profile-img {
+    /* background-color: #272727; */
+    border: 2px solid #fff;
+    border-radius: 50%;
+    height: 150px;
+    position: relative;
+    width: 150px;
+    /* z-index: -10; */
+}
+
+/* Grow; From: https://github.com/IanLunn/Hover/blob/master/css/hover.css */
+
+.hvr-grow {
+    display: inline-block;
+    vertical-align: middle;
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    transition-duration: 0.3s;
+    transition-property: transform;
+}
+
+.hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+    transform: scale(1.1);
+}
+
+/* #endregion */
+
+/*
+   _____ _  _______ _      _       _____ 
+  / ____| |/ /_   _| |    | |     / ____|
+ | (___ | ' /  | | | |    | |    | (___  
+  \___ \|  <   | | | |    | |     \___ \ 
+  ____) | . \ _| |_| |____| |____ ____) |
+ |_____/|_|\_\_____|______|______|_____/ 
+                                         
+*/
+
+/* #region */
+
+div.stars {
+    /* width: 340px; */
+    display: inline-block;
+}
+
+.star {
+    /* float: right; */
+    vertical-align: middle;
+    padding: 2px;
+    font-size: 22px;
+    color: #2a2a2a;
+    transition: all .2s;
+    position: relative;
+}
+
+.star:hover {
+    transform: rotate(-15deg) scale(1.3);
+    text-shadow: 0 0 20px #cdc632;
+}
+
+.checked-star {
+    color: #ffdd44;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: #cdc632;
+}
+
+.checked-star:hover {
+    -webkit-text-stroke-width: 0;
+}
+
+.pre-stars-icon {
+    /* float: right; */
+    vertical-align: middle;
+    padding: 10px;
+    font-size: 42px;
+    color: #2a2a2a;
+    transition: all .2s;
+    position: relative;
+}
+
+/* icons */
+
+#html5-icon {
+    color: rgb(255, 166, 0);
+}
+
+#css3-icon {
+    color: turquoise;
+}
+
+#java-icon {
+    color: rgba(34, 128, 165, 0.863);
+}
+
+#js-icon {
+    color: red;
+}
+
+#python-icon {
+    color: rgb(219, 219, 7);
+}
+
+#steam-icon {
+    color: darkblue;
+}
+
+/* #endregion */
+
+/*
+  _____  _____   ____       _ ______ _____ _______ _____ 
+ |  __ \|  __ \ / __ \     | |  ____/ ____|__   __/ ____|
+ | |__) | |__) | |  | |    | | |__ | |       | | | (___  
+ |  ___/|  _  /| |  | |_   | |  __|| |       | |  \___ \ 
+ | |    | | \ \| |__| | |__| | |___| |____   | |  ____) |
+ |_|    |_|  \_\\____/ \____/|______\_____|  |_| |_____/ 
+                                                         
+*/
+
+/* #region */
+
+/* #endregion */
+
+/*
+   ____ _______ _    _ ______ _____  
+  / __ \__   __| |  | |  ____|  __ \ 
+ | |  | | | |  | |__| | |__  | |__) |
+ | |  | | | |  |  __  |  __| |  _  / 
+ | |__| | | |  | |  | | |____| | \ \ 
+  \____/  |_|  |_|  |_|______|_|  \_\
+                                     
+*/
+
+/* #region */
+
+/* Parallax */
+
+.parallax {
+    background-color: black;
+    background-image: url("../img/kangal.jpg");
+    height: 600px;
+    width: 100%;
+    opacity: 0.65;
+    z-index: -1;
+    /* position: relative; */
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.inbetween {
+    position: relative;
+    background-color: rgba(211, 56, 71, 0.9);
+    z-index: 2;
+}
+
+/* #endregion */
+
+/*
+  ______ ____   ____ _______ ______ _____  
+ |  ____/ __ \ / __ \__   __|  ____|  __ \ 
+ | |__ | |  | | |  | | | |  | |__  | |__) |
+ |  __|| |  | | |  | | | |  |  __| |  _  / 
+ | |   | |__| | |__| | | |  | |____| | \ \ 
+ |_|    \____/ \____/  |_|  |______|_|  \_\
+                                           
+*/
+
+/* #region */
+
+/* #endregion */
