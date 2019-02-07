@@ -1,7 +1,4 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
 layout: default
 ---
 
@@ -10,7 +7,63 @@ layout: default
 
 <h1>Gotdzellal's Github Page</h1>
 
+<!-- DIVIDERS -->
+<hr class="divider">
+<br>
+<hr class="divider" data-content="TEXT">
+<br>
+<hr class="divider divider-text-on-top" data-content="TEXT">
+<br>
+<hr class="divider divider-gradient" data-content="TEXT">
 
+<!-- FILTERS -->
+<div class="filters">
+
+    <div class="block">
+        <div class="block-head">
+            <h1>START</h1>
+        </div>
+        <div class="block-content">
+            <h1>CONTENT</h1>
+        </div>
+    </div>
+
+</div>
+
+
+<fieldset>
+    <legend>Tag</legend>
+    <div class="tag_button">
+        <input type="radio" id="all_button" name="tag" checked="checked">
+        <label for="all_button">All</label>
+    </div>
+    <div class="tag_button">
+        <input type="radio" id="test1_button" name="tag">
+        <label for="test1_button">Test 1</label>
+    </div>
+    <div class="tag_button">
+        <input type="radio" id="test2_button" name="tag">
+        <label for="test2_button">Test 2</label>
+    </div>
+</fieldset>
+
+<div class="kangal all"
+    style="width:200px;height:300px;background-image: url(assets/img/kangal.jpg);background-size: 100% 100%;margin:10px;display: inline-block;">
+</div>
+<div class="kangal all"
+    style="width:200px;height:300px;background-image: url(assets/img/kangal.jpg);background-size: 100% 100%;margin:10px;display: inline-block;">
+</div>
+<div class="kangal all test1"
+    style="width:200px;height:300px;background-image: url(assets/img/kangal.jpg);background-size: 100% 100%;margin:10px;display: inline-block;">
+</div>
+<div class="kangal all test2"
+    style="width:200px;height:300px;background-image: url(assets/img/kangal.jpg);background-size: 100% 100%;margin:10px;display: inline-block;">
+</div>
+<div class="kangal all test2"
+    style="width:200px;height:300px;background-image: url(assets/img/kangal.jpg);background-size: 100% 100%;margin:10px;display: inline-block;">
+</div>
+
+<br>
 
 <!-- STARS -->
 {%- include star.html count=0 icon='fab fa-html5' id='html5-icon' -%}<br>

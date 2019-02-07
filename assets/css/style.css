@@ -79,12 +79,12 @@ nav ol, nav ul {
     /* background-color: black; */
 }
 
-.nav-content {
-    display: flex;
+.nav-item:hover {
+    background-color: #2a2a2a;
 }
 
-.nav-item:hover {
-    /* background-color: turquoise; */
+.nav-content {
+    display: flex;
 }
 
 .nav-link {
@@ -224,6 +224,51 @@ div.stars {
 */
 
 /* #region */
+
+/* IDEA: 
+    [ALL] [TAG_1] [TAG_2]
+        -----------
+        |         |
+        -----------
+        |         |
+        |         |
+        |---------|
+*/
+
+/* Tags (Radio-Buttons) */
+
+.tag_button {
+    display: inline-block;
+}
+
+.tag_button input {
+    display: block;
+    position: absolute;
+}
+
+.tag_button label {
+    margin: 0 5px;
+}
+
+.tag_button input[type="radio"] {
+    opacity: 0.01;
+    z-index: 100;
+}
+
+.tag_button input[type="radio"]:checked+label {
+    background: yellow;
+}
+
+.tag_button label {
+    padding: 5px;
+    border: 1px solid #CCC;
+    cursor: pointer;
+    z-index: 90;
+}
+
+.tag_button label:hover {
+    background: #DDD;
+}
 
 /* #endregion */
 
